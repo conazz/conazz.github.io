@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mastermind</title>
+    <link
+      rel="shortcut icon"
+      href="./resources/logo tab.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./stylescss.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+
+    <!-- Navbar -->
+
+    <nav>
+      <div id="logo">
+        <img class="logo-nav" src="./resources/logo white.png" alt="logo white" />
+        <img class="logo-nav2" src="./resources/logo tab.png" alt="logo white" />
+      </div>
+      <div id="navbar">
+        <ul class="list">
+          <li class="hover-down"><a class="hover-mvx-color" href="#home">Home</a></li>
+          <li class="hover-down"><a class="hover-mvx-color" href="#about1">About</a></li>
+          <li class="hover-down"><a class="hover-mvx-color" href="#">Contact</a></li>
+          <li class="hover-down"><a class="hover-mvx-color" href="#">Online Library</a></li>
+          <li class="hover-down"><a class="hover-mvx-color" href="#">Login/Register</a></li>
+        </ul>
+      </div>
+      <div id="navbar-med">
+        <ul class="list">
+          <li class="hover-down"><a class="hover-mvx-color" href="#">Login/Register</a></li>
+          <!-- sidebar button -->
+          <div id="dropdown">
+            <div class="dropdown-lines"></div>
+            <div class="dropdown-lines"></div>
+            <div class="dropdown-lines"></div>
+          </div>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- side bar -->
+    <div id="sidebar" class="sidebar hide">
+      <div id="dropdown-list" class="dropdown-list hide">
+        <div class="dropdown-list-top">
+          <img class="logo-nav sidebar-logo" src="./resources/logo white.png" alt="logo white">
+          <div id="close-btn">
+            <i class="fa-regular fa-circle-xmark"></i>
+          </div>
+        </div>
+        <ul class="sidebar-nav">
+          <a class="hover-mvx-color" href="#"><li class="sidebar-list">Login | Register</li></a>
+          <a class="hover-mvx-color" href="#home"><li class="sidebar-list">HOME</li></a>
+          <a class="hover-mvx-color" href="#about1"><li class="sidebar-list">ABOUT</li></a>
+          <a class="hover-mvx-color" href="#"><li class="sidebar-list">CONTACT</li></a>
+          <a class="hover-mvx-color" href="#"><li class="sidebar-list">ONLINE LIBRARY</li></a>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Homepage -->
+
+    <section id="home">
+      <h1>Welcome to Mastermind!</h1>
+      <p>
+        Mastermind is an online library store and Motivational Facebook page
+        where we post daily motivation quotes and lessons. We are a small
+        business with big dreams of changing the world on book at a time!
+        Mastermind is about creating an environment for people to grow
+        intellectually, emotionally, and spiritually.
+      </p>
+      <div class="icon-div hover-down">
+        <a
+          href="https://www.facebook.com/mastermndofficial"
+          target="_blank"
+          class="social-logo"
+          ><i class="fa-brands fa-facebook hover-mvx-color"></i></a>
+    </section>
+    <section id="about">
+      <div class="about1">
+        <div class="void">
+          <i class="fa-regular fa-circle-question fa-bounce"></i>
+        </div>
+        <div class="content">
+          <h2>About Mastermind</h2>
+          <p>Before I begin, Mastermind is not only about sharing motivational posts but also about connecting with people who want to improve themselves and also be inspired. But that's not all, we have a wide range of eBooks about personal development ready to download in our Online Library(Refer Below).</p>
+          <a href="#"><button class="btn">Learn More</button></a>
+        </div>
+      </div>
+      <div class="about2">
+        <div class="void">
+          <i class="fa-solid fa-book-open fa-flip"></i>
+        </div>
+        <div class="content text-right">
+          <h2>Online Library</h2>
+          <p>Explore our online library, a treasure trove of carefully curated resources designed to enrich your knowledge and captivate your curiosity. Delve into a diverse collection that spans personal development, emotional awareness, and more, all at your fingertips.</p>
+          <a href="#"><button class="btn">Learn More</button></a>
+        </div>
+      </div>
+    </section>
+    <script src="./index.js"></script>
+  </body>
+</html>
