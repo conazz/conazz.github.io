@@ -2,6 +2,7 @@ const dropDown = document.getElementById('dropdown');
 const sidebar = document.getElementById('sidebar');
 const dropDownList = document.getElementById('dropdown-list');
 const closeBtn = document.getElementById('close-btn');
+const links = document.querySelectorAll('a');
 
 let lastScrollTop = 0;
     nav = document.querySelector("nav");
@@ -64,3 +65,22 @@ document.addEventListener('click', function(event) {
         sidebar.style.transition = 'transform 0.1s, opacity 0.7s 0.1s';
       }, 100);
 });
+
+links.forEach(link => {
+    link.addEventListener('click', (event) => {
+      // Prevent the default behavior of the anchor element
+      event.preventDefault();
+  
+      // Your existing code to close the sidebar
+      sidebar.classList.remove('darken');
+      dropDownList.classList.remove('sidebar-scroll-in');
+      sidebar.classList.add('hide');
+      dropDownList.classList.add('hide');
+  
+      // Get the href attribute and navigate to the specified URL
+      const href = link.getAttribute('href');
+      if (href) {
+        window.location.href = href;
+      }
+    });
+  });
