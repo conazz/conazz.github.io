@@ -10,9 +10,7 @@ window.addEventListener("scroll", () => {
     let scrollTop = window.scrollY || document.documentElement.scrollTop;
 
     if (window.innerWidth < 600) {
-        setTimeout(function() {
-            nav.classList.toggle("sticky", window.scrollY > 0);
-        }, 600);
+        nav.classList.toggle("sticky", window.scrollY > 0);
         if (scrollTop > lastScrollTop) {
             nav.style.transform = "translateY(-200px)";
         } else {

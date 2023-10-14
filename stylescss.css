@@ -421,6 +421,11 @@ i {
     /* border: 2px solid white; */
   }
 
+  .sidebar-list {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
   #about {
     width: 100%;
   }
