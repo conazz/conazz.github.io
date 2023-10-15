@@ -27,8 +27,8 @@ dropDown.onclick = function (event) {
 
     event.stopPropagation();
 
-    sidebar.classList.remove('hide');
-    dropDownList.classList.remove('hide');
+    sidebar.classList.toggle('hide');
+    dropDownList.classList.toggle('hide');
     sidebar.classList.toggle('darken');
     dropDownList.classList.toggle('sidebar-scroll-in');
     setTimeout(function () {
@@ -37,10 +37,10 @@ dropDown.onclick = function (event) {
 };
 
 closeBtn.onclick = function() {
-    sidebar.classList.remove('darken');
-    dropDownList.classList.remove('sidebar-scroll-in');
-    sidebar.classList.add('hide');
-    dropDownList.classList.add('hide');
+    sidebar.classList.toggle('darken');
+    dropDownList.classList.toggle('sidebar-scroll-in');
+    sidebar.classList.toggle('hide');
+    dropDownList.classList.toggle('hide');
     setTimeout(function () {
         sidebar.style.transition = 'transform 0.1s, opacity 0.7s 0.1s';
       }, 100);
@@ -72,8 +72,8 @@ links.forEach(link => {
       event.preventDefault();
   
       // Your existing code to close the sidebar
-      sidebar.classList.remove('darken');
-      dropDownList.classList.remove('sidebar-scroll-in');
+      sidebar.classList.toggle('darken');
+      dropDownList.classList.toggle('sidebar-scroll-in');
       sidebar.classList.add('hide');
       dropDownList.classList.add('hide');
   
