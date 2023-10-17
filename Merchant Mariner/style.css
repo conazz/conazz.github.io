@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono&display=swap");
+
+:root {
+  --mint-color1: #20dbc2;
+  --mint-color2: #22c5af;
+  --htm-color: rgba(12, 11, 33, 0.9);
+  --lightmode-text-clr: rgb(8, 2, 71);
+  --darkmode-text-clr: whitesmoke;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  font-family: "Raleway", sans-serif;
+}
+
+html {
+  background-color: azure;
+  overflow: hidden;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+#big-circle {
+  position: absolute;
+  width: 350vw;
+  height: 350vh;
+  border-radius: 50%;
+  background-color: var(--mint-color2);
+  transform: translate(-84%, -50%);
+  transition: all 2s ease-in-out;
+  z-index: 2;
+}
+
+.intro-text {
+  max-width: 800px;
+  width: 40vw;
+  text-align: center;
+  color: whitesmoke;
+}
+
+#non-member,
+#member {
+  position: absolute;
+  transition: transform 3s;
+  z-index: 3;
+  top: 100px;
+}
+
+#non-member {
+  left: 8vw;
+}
+
+#member {
+  right: 8vw;
+}
+
+.welcome-title {
+  font-size: 7rem;
+  margin-bottom: 25px;
+}
+
+.welcome-note {
+  font-size: 3rem;
+  margin-bottom: 25px;
+}
+
+.btn {
+  border-radius: 40px;
+  width: 150px;
+  height: 50px;
+  color: var(--darkmode-text-clr);
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.form-btn {
+  background-color: var(--mint-color2);
+  margin-bottom: 25px;
+}
+
+.toggle-btn {
+  background-color: transparent;
+  border: 3px solid var(--darkmode-text-clr);
+}
+
+.form-btn:hover {
+  background: var(--mint-color1);
+}
+
+.toggle-btn:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #4f4e4e;
+  border-color: transparent;
+}
+
+/* input forms */
+
+.form {
+  width: 40vw;
+  height: 80vw;
+  min-width: 350px;
+  max-width: 600px;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 2s;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#sign-up,
+#log-in {
+  position: absolute;
+  align-self: center;
+  z-index: 1;
+}
+
+#sign-up {
+  margin-left: 10vw;
+}
+
+#log-in {
+  margin-right: 10vw;
+  right: 0;
+}
+
+.form h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 25px;
+  color: var(--htm-color);
+}
+
+.form p {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 35px;
+}
+
+.input-field {
+  width: 90%;
+  height: 70px;
+  margin-bottom: 25px;
+  display: flex;
+  border-radius: 55px;
+  background-color: #f0f0f0;
+  box-shadow: 0 0 5px gray;
+}
+
+.input-field i {
+  height: 100%;
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: var(--htm-color);
+}
+
+.password-toggle-icon {
+  font-size: 2rem !important;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.input-field input {
+  height: 100%;
+  width: 85%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 2.3rem;
+  font-weight: 600;
+  color: var(--htm-color);
+}
+
+.input-field input[type="password"] {
+  width: 75%;
+}
+
+input::placeholder {
+  color: #716f6fa0;
+  font-weight: 400;
+}
+
+.social-medias {
+  display: flex;
+}
+
+.social-icons {
+  margin: 0 15px;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 50%;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.social-medias a {
+  text-decoration: none;
+}
+
+.social-icons i {
+  font-size: 3rem;
+  color: var(--htm-color);
+  transition: all 0.3s;
+}
+
+.social-medias a:hover :is(.social-icons, .social-icons i) {
+  color: var(--mint-color1);
+  border-color: var(--mint-color2);
+}
+
+/* .img-container {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    bottom: 15px;
+    justify-content: space-between;
+    z-index: 3;
+} */
+
+#ratings,
+#officers {
+  max-height: 500px;
+  z-index: 3;
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  transition: transform 4s;
+}
+
+#ratings {
+  margin-left: 30vw;
+  height: 35vh;
+}
+
+#officers {
+  right: 0;
+  margin-right: 30vw;
+  height: 50vh;
+}
+
+.show {
+  transform: translateX(0);
+}
+
+.hide-left {
+  transform: translateX(-500%);
+}
+
+.hide-right {
+  transform: translateX(500%);
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1600px) {
+  #non-member {
+    left: 5vw;
+  }
+
+  #member {
+    right: 5vw;
+  }
+
+  #sign-up {
+    margin-left: 5vw;
+  }
+
+  #log-in {
+    margin-right: 5vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #sign-up {
+    margin-left: 1vw;
+  }
+
+  #log-in {
+    margin-right: 1vw;
+    right: 0;
+  }
+
+  .welcome-title {
+    font-size: 5rem;
+    margin-bottom: 25px;
+  }
+
+  .welcome-note {
+    font-size: 2.4rem;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  #big-circle {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    background-color: var(--mint-color2);
+    transform: translate(0);
+    top: -225px;
+    left: -225px;
+    transition: all 1s ease-in-out;
+    z-index: 1;
+  }
+
+  .intro-text {
+    width: 200px;
+  }
+
+  .welcome-title {
+    font-size: 3rem;
+  }
+
+  .toggle-btn {
+    width: 100px;
+    height: 35px;
+    font-size: 1.5rem;
+  }
+
+  #non-member,
+  #member {
+    transition: transform 3s;
+    z-index: 4;
+    top: 20px;
+  }
+
+  #non-member {
+    left: 0;
+  }
+
+  #member {
+    right: 0;
+  }
+
+  .welcome-note {
+    display: none;
+  }
+
+  .form {
+    left: calc(50vw - 175px);
+    z-index: 3;
+  }
+
+  .input-field input {
+    font-size: 1.7rem;
+  }
+
+  #ratings {
+    margin-left: 0;
+    height: 20vh;
+  }
+
+  #officers {
+    right: 0;
+    margin-right: 0;
+    height: 25vh;
+  }
+}
+
+@media screen and (max-height: 1024px) {
+
+  #ratings,
+  #officers {
+    max-height: 300px;
+  }
+
+  #officers {
+    bottom: -60px
+  }
+}

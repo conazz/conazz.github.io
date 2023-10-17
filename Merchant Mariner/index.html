@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in/Register</title>
+    <link rel="shortcut icon" href="./resources/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- green circle -->
+    <div id="big-circle"></div>
+    <!-- intro text -->
+    <div id="non-member" class="intro-text">
+      <h1 class="welcome-title">New here?</h1>
+      <p class="welcome-note">
+        Click the button below to embark on a seamless journey. Explore a
+        curated selection of essentials for your onboard stay and easily access
+        your personalized training schedules based on your rank. Your smooth
+        sailing experience starts here – gear up and stay on course with ease!
+      </p>
+      <button
+        id="toggle-signup"
+        class="btn toggle-btn"
+        onclick="toggleSignUp()"
+      >
+        Sign up
+      </button>
+    </div>
+    <div id="member" class="intro-text hide-right">
+      <h1 class="welcome-title">Already a Member?</h1>
+      <p class="welcome-note">
+        Ahoy, Sailor! Welcome back to your maritime haven. Ready to chart your
+        course again? Click below to access your personalized dashboard. From
+        restocking essentials for your voyage to checking your tailored training
+        schedules, we've got you covered. Smooth seas and happy shopping!
+      </p>
+      <button id="toggle-login" class="btn toggle-btn" onclick="toggleLogIn()">
+        Log in
+      </button>
+    </div>
+
+    <!-- sign up form -->
+    <div id="sign-up" class="form hide-right">
+      <h1>Sign up</h1>
+      <form action="/signup" method="post">
+        <div class="input-field">
+          <i class="fa-solid fa-user"></i>
+          <input
+            type="text"
+            name="signup-username"
+            id="signup-username"
+            placeholder="Username"
+            required
+          />
+        </div>
+        <div class="input-field">
+          <i class="fa-solid fa-envelope"></i>
+          <input
+            type="email"
+            name="signup-email"
+            id="signup-email"
+            placeholder="Email"
+            required
+          />
+        </div>
+        <div class="input-field">
+          <i class="fa-solid fa-key"></i>
+          <input
+            type="password"
+            name="signup-password"
+            id="signup-password"
+            placeholder="Password"
+            oninput="handlePasswordInput('signup-password', 'password-toggle-icon')"
+            required
+          />
+          <i
+            class="password-toggle-icon fa-solid fa-eye-slash"
+            onclick="togglePasswordVisibility('signup-password', 'password-toggle-icon')"
+          ></i>
+        </div>
+        <button type="submit" class="btn form-btn">Sign up</button>
+      </form>
+      <p>Or sign up with social platforms</p>
+      <div class="social-medias">
+        <a href="#">
+          <div class="social-icons">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+        </a>
+        <a href="#">
+          <div class="social-icons">
+            <i class="fa-brands fa-x-twitter"></i>
+          </div>
+        </a>
+        <a href="#">
+          <div class="social-icons">
+            <i class="fa-brands fa-google"></i>
+          </div>
+        </a>
+        <a href="#">
+          <div class="social-icons">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- sign in form -->
+    <div id="log-in" class="form">
+      <h1>Log in</h1>
+      <form action="/login" method="post">
+        <div class="input-field">
+          <i class="fa-solid fa-user"></i>
+          <input
+            type="text"
+            name="login-username"
+            id="login-username"
+            placeholder="Username"
+            required
+          />
+        </div>
+        <div class="input-field">
+          <i class="fa-solid fa-key"></i>
+          <input
+            type="password"
+            name="login-password"
+            id="login-password"
+            placeholder="Password"
+            oninput="handlePasswordInput('login-password', 'password-toggle-icon')"
+            required
+          />
+          <i
+            class="password-toggle-icon fa-solid fa-eye-slash"
+            onclick="togglePasswordVisibility('login-password', 'password-toggle-icon')"
+          ></i>
+        </div>
+        <button type="submit" class="btn form-btn">Log in</button>
+      </form>
+      <p>Or log in with social platforms</p>
+      <div class="social-medias">
+        <a href="#">
+          <div class="social-icons">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+        </a>
+        <a href="#">
+          <div class="social-icons">
+            <i class="fa-brands fa-x-twitter"></i>
+          </div>
+        </a>
+        <a href="#">
+          <div class="social-icons">
+            <i class="fa-brands fa-google"></i>
+          </div>
+        </a>
+        <a href="#">
+          <div class="social-icons">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+        </a>
+      </div>
+    </div>
+      <img
+        id="ratings"
+        src="./resources/OIG-removebg-preview.png"
+        alt="ship's ratings"
+      />
+      <img
+        id="officers"
+        class="hide-right"
+        src="./resources/ship's officers.png"
+        alt="ship's officer"
+      />
+    <script src="./index.js"></script>
+  </body>
+</html>
