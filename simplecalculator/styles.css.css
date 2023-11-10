@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+}
+
+html {
+    background-color: rgb(13, 30, 64);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#container {
+    /* border: 1px solid wheat; */
+    height: 700px;
+    width: 450px;
+    border-radius: 30px;
+    background-color: #22252D;
+    box-shadow: 4px 4px 30px rgba(164, 164, 164, 0.3);
+}
+
+#input-container {
+    /* border: 1px solid white; */
+    height: 200px;
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 25px;
+    border-radius: 5px;
+}
+
+#input-display {
+    height: 45%;
+    width: 100%;
+    text-align: right;
+    font-size: 5rem;
+    color: white;
+    background-color: transparent;
+    border: none;
+    pointer-events: none;
+    padding-right: 10px;
+}
+
+#buttons {
+    /* border: 1px solid white; */
+    display: grid;
+    margin: 0 25px 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 5px;
+    justify-items: center;
+}
+
+.btn, .btn-equal {
+    height: 80px;
+    width: 90px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    border-radius: 15px;
+    transition: opacity 0.3s, background-color 0.2s;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn:active {
+    background-color: rgba(228, 233, 233, 0.858);
+}
+
+.btn-yellow {
+    background-color: rgb(245, 146, 62);
+    color: white;
+}
+
+.button-grey {
+    background-color: rgb(224, 224, 224);
+    color: black;
+}
+
+.btn-equal {
+    background-color: green;
+    color: white;
+}
+
+.btn-clear {
+    background-color: red;
+    color: white;
+}
+
+@media only screen and (max-height: 900px), (max-width: 470px) {
+    #container {
+        height: 500px;
+        width: 300px;
+    }
+
+    #input-container {
+        height: 150px;
+    }
+
+    .btn, .btn-equal {
+        height: 50px;
+        width: 55px;
+        font-size: 2rem;
+    }
+}
