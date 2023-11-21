@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My Profile</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        color: white;
+      }
+
+      html {
+        background: url("./pics/scifi.png") no-repeat center fixed;
+        background-size: cover;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        width: 95%;
+        max-width: 1350px;
+        height: fit-content;
+        margin: 50px 0 50px;
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 20px;
+      }
+
+      .profile-pic {
+        height: 200px;
+        display: flex;
+        margin: 50px;
+      }
+
+      .pp {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+      }
+
+      h1 {
+        color: white;
+        margin-top: 70px;
+        margin-left: 25px;
+        font-size: 40px;
+      }
+
+      h2 {
+        color: #23f7dd;
+        margin-left: 25px;
+        font-size: 35px;
+      }
+
+      .details {
+        display: flex;
+        justify-content: center;
+      }
+
+      table {
+        width: 100%;
+        margin: 25px;
+      }
+
+      tbody {
+        width: 100%;
+      }
+
+      tr {
+        width: 100%;
+        height: fit-content;
+      }
+
+      td {
+        padding: 10px;
+        font-size: 25px;
+      }
+
+      .stripe1,
+      .keys,
+      .info {
+        background-color: rgba(250, 250, 250, 0.292);
+      }
+
+      .stripe2,
+      .keys,
+      .info {
+        background-color: transparent;
+      }
+
+      .keys {
+        width: 25%;
+      }
+
+      footer {
+        background: transparent;
+        display: flex;
+        justify-content: space-between;
+        height: 10vh;
+        width: 100%;
+      }
+
+      footer p {
+        font-family: sans-serif;
+        font-size: 20px;
+        width: 400px;
+        padding: 25px;
+      }
+
+      .home {
+        width: 150px;
+        height: 50px;
+        font-size: 30px;
+        color: #23f7dd;
+        background-color: transparent;
+        border: 1px solid #23f7dd;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+
+      .home:hover {
+        background-color: #23f7dd30;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="profile-pic">
+        <img class="pp" src="./pics/bob.jpg" alt="" />
+        <h1>Bob Vincent C. Millares</h1>
+      </div>
+      <h2>Personal Information</h2>
+      <div class="details">
+        <table>
+          <tbody>
+            <tr class="stripe1">
+              <td class="keys">Name</td>
+              <td class="info">Bob Vincent Millares</td>
+            </tr>
+            <tr class="stripe2">
+              <td class="keys">School</td>
+              <td class="info">Central Philippine University</td>
+            </tr>
+            <tr class="stripe1">
+              <td class="keys">Year Level and Section</td>
+              <td class="info">Grade 10-SUN</td>
+            </tr>
+            <tr class="stripe2">
+              <td class="keys">Date of Birth</td>
+              <td class="info">June 27 2007</td>
+            </tr>
+            <tr class="stripe1">
+              <td class="keys">Gender</td>
+              <td class="info">Male</td>
+            </tr>
+            <tr class="stripe2">
+              <td class="keys">Nationality</td>
+              <td class="info">Filipino</td>
+            </tr>
+            <tr class="stripe1">
+              <td class="keys">Marital Status</td>
+              <td class="info">Single</td>
+            </tr>
+            <tr class="stripe2">
+              <td class="keys">Contact No.</td>
+              <td class="info">09123456789</td>
+            </tr>
+            <tr class="stripe1">
+              <td class="keys">Address</td>
+              <td class="info">
+                Lot 1 Block 96 Landheights, Ville, Tagbac, Jaro, Iloilo City
+              </td>
+            </tr>
+            <tr class="stripe2">
+              <td class="keys">Email Address</td>
+              <td class="info">bobvincent27@gmail.com</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <a href="./index.html.html"><button class="home">Home</button></a>
+    <footer>
+      <p>
+        **Disclaimer: The information and details displayed on this webpage are
+        for display purposes only. **
+      </p>
+      <p>Made with ❤️ by Bob</p>
+    </footer>
+  </body>
+</html>

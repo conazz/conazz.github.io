@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My gallery</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        color: white;
+      }
+
+      html {
+        background: url("./pics/scifi.png") no-repeat center fixed;
+        background-size: cover;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        width: 95%;
+        max-width: 1350px;
+        height: fit-content;
+        margin: 50px 0 50px;
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 20px;
+        padding: 50px;
+      }
+
+      .top {
+        height: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+      }
+
+      .profile-pic {
+        height: fit-content;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .pp {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-bottom: 25px;
+      }
+
+      h1 {
+        font-size: 25px;
+      }
+
+      .username {
+        font-size: 40px;
+        color: #23f7dd;
+        font-weight: 200;
+        /* margin: 10px 0; */
+      }
+
+      .socials {
+        width: 100px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      i {
+        font-size: 30px;
+        transition: all 0.3s;
+      }
+
+      i:hover {
+        color: #23f7dd;
+      }
+
+      .top-right {
+        width: 70%;
+        min-width: 500px;
+        min-height: 275px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .followers {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* margin-bottom: 60px; */
+        /* border: 1px solid green; */
+      }
+
+      h2 {
+        font-size: 18px;
+        font-weight: 100;
+      }
+
+      .bold {
+        font-weight: 700;
+        color: #23f7dd;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 10px;
+      }
+
+      .pictures {
+        width: 400px;
+        height: 400px;
+      }
+
+      footer {
+        background: transparent;
+        display: flex;
+        justify-content: space-between;
+        height: 10vh;
+        width: 100%;
+      }
+
+      footer p {
+        font-family: sans-serif;
+        font-size: 20px;
+        width: 400px;
+        padding: 25px;
+      }
+
+      .home {
+        width: 150px;
+        height: 50px;
+        font-size: 30px;
+        color: #23f7dd;
+        background-color: transparent;
+        border: 1px solid #23f7dd;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+
+      .home:hover {
+        background-color: #23f7dd30;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="top">
+        <div class="profile-pic">
+          <img class="pp" src="./pics/bob.jpg" alt="" />
+          <div class="socials">
+            <a href="https://www.facebook.com/bobvincent.millares"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="https://www.instagram.com/bobvincentmillares/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <div class="top-right">
+          <div class="username">bobvincentmillares</div>
+          <div class="followers">
+            <h1>0 posts</h1>
+            <h1>47 followers</h1>
+            <h1>39 following</h1>
+          </div>
+          <h1>Bob Vincent C. Millares</h1>
+          <div class="following">
+            <h2>
+              Followed by <span class="bold">liezlmillares</span>,
+              <span class="bold">vicentemillares</span>, and
+              <span class="bold">princecharlesss</span>
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="gallery">
+        <img class="pictures" src="./pics/bob1.jpg" alt="" />
+        <img class="pictures" src="./pics/bob2.jpg" alt="" />
+        <img class="pictures" src="./pics/bob3.jpg" alt="" />
+        <img class="pictures" src="./pics/bob4.jpg" alt="" />
+        <img class="pictures" src="./pics/bob5.jpg" alt="" />
+        <img class="pictures" src="./pics/bob6.jpg" alt="" />
+        <img class="pictures" src="./pics/bob7.jpg" alt="" />
+        <img class="pictures" src="./pics/bob8.jpg" alt="" />
+        <img class="pictures" src="./pics/bob9.jpg" alt="" />
+      </div>
+    </div>
+    <a href="./index.html.html"><button class="home">Home</button></a>
+    <footer>
+      <p>
+        **Disclaimer: The information and details displayed on this webpage are
+        for display purposes only. **
+      </p>
+      <p>Made with ❤️ by Bob</p>
+    </footer>
+  </body>
+</html>
