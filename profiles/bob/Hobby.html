@@ -26,6 +26,7 @@
         width: 95%;
         max-width: 1350px;
         height: fit-content;
+        min-height: 90vh;
         margin: 50px 0 50px;
         background: rgba(0, 0, 0, 0.6);
         border-radius: 20px;
@@ -49,15 +50,16 @@
       }
 
       .hobbies {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
       }
 
       .hobby {
         width: 300px;
         height: 250px;
         overflow: hidden;
+        margin: 20px 20px;
       }
 
       img {
@@ -102,23 +104,23 @@
       <h1>My Hobbies</h1>
       <div class="hobbies">
         <div class="hobby">
-          <img src="./pics/playing guitar.gif" alt="Playing Guitar" />
+          <img src="./pics/playing guitar.webp" alt="Playing Guitar" />
           <h2>Playing Guitar</h2>
         </div>
         <div class="hobby">
-          <img src="./pics/JJK.gif" alt="Watching Anime" />
+          <img src="./pics/watching anime.jpeg" alt="Watching Anime" />
           <h2>Watching Anime</h2>
         </div>
         <div class="hobby">
-          <img src="./pics/volleyball.gif" alt="Play Volleyball" />
+          <img src="./pics/playing volleyball.jpg" alt="Play Volleyball" />
           <h2>Play Volleyball</h2>
         </div>
         <div class="hobby">
-          <img src="./pics/eating.gif" alt="eating" />
+          <img src="./pics/eating.jpg" alt="eating" />
           <h2>Eating</h2>
         </div>
         <div class="hobby">
-          <img src="./pics/sleeping.gif" alt="Sleeping" />
+          <img src="./pics/sleeping.jpg" alt="Sleeping" />
           <h2>Sleeping</h2>
         </div>
       </div>
