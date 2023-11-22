@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My gallery</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        color: black;
+      }
+
+      html {
+        background: url("./pics/light\ scifi.jpg") no-repeat center fixed;
+        background-size: cover;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        width: 95%;
+        max-width: 1350px;
+        height: fit-content;
+        margin: 50px 0 50px;
+        background: rgba(20, 18, 18, 0.201);
+        backdrop-filter: blur(4px);
+        border-radius: 20px;
+        padding: 50px;
+      }
+
+      .top {
+        height: fit-content;
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+      }
+
+      .profile-pic {
+        height: fit-content;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .pp {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-bottom: 25px;
+      }
+
+      h1 {
+        font-size: 25px;
+      }
+
+      .username {
+        width: 80%;
+        text-align: right;
+        font-size: 40px;
+        color: black;
+        font-weight: 200;
+      }
+
+      .socials {
+        width: 100px;
+        display: flex;
+        justify-content: center;
+      }
+
+      i {
+        font-size: 30px;
+        transition: all 0.3s;
+      }
+
+      i:hover {
+        color: wheat;
+      }
+
+      .top-left {
+        width: 70%;
+        min-width: 500px;
+        min-height: 275px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .followers {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .following {
+        width: 80%;
+        text-align: right;
+      }
+
+      h2 {
+        font-size: 18px;
+        font-weight: 100;
+      }
+
+      .fullname {
+        width: 80%;
+        text-align: right;
+      }
+
+      .bold {
+        font-weight: 700;
+        color: #2a5953;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 10px;
+        justify-items: center;
+      }
+
+      .pictures {
+        width: 400px;
+        height: 400px;
+      }
+
+      .home {
+        width: 150px;
+        height: 50px;
+        margin-bottom: 100px;;
+        font-size: 30px;
+        color: black;
+        background-color: transparent;
+        border: 1px solid #8d8c8c;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+
+      .home:hover {
+        background-color: #0000003c;
+        border-color: transparent;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="top">
+        <div class="profile-pic">
+          <img class="pp" src="./pics/hans1.jpg" alt="" />
+          <div class="socials">
+            <a href="https://www.facebook.com/hansrondave.plaga"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+          </div>
+        </div>
+        <div class="top-left">
+          <div class="username">hansrondaveplaga</div>
+          <div class="followers">
+            <h1>5 posts</h1>
+            <h1>1.35m followers</h1>
+            <h1>1 following</h1>
+          </div>
+          <h1 class="fullname">Hans Rondave E. Plaga</h1>
+          <div class="following">
+            <h2>
+              Followed by <span class="bold">teodororobles</span>,
+              <span class="bold">josepotaciorizal</span>, and
+              <span class="bold">padredamaso</span>
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="gallery">
+        <img class="pictures" src="./pics/hans2.jpg" alt="" />
+        <img class="pictures" src="./pics/hans3.jpg" alt="" />
+        <img class="pictures" src="./pics/hans4.jpg" alt="" />
+        <img class="pictures" src="./pics/hans5.jpg" alt="" />
+        <img class="pictures" src="./pics/hans6.jpg" alt="" />
+      </div>
+    </div>
+    <a href="./index.html"><button class="home">Home</button></a>
+  </body>
+</html>

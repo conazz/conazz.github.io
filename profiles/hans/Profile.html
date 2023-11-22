@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My Profile</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        color: black;
+      }
+
+      html {
+        background: url("./pics/light\ scifi.jpg") no-repeat center fixed;
+        background-size: cover;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        width: 95%;
+        max-width: 1350px;
+        height: fit-content;
+        margin: 50px 0 50px;
+        background: rgba(20, 18, 18, 0.201);
+        backdrop-filter: blur(4px);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .profile-pic {
+        min-height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px;
+      }
+
+      .pp {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        color: black;
+        margin-top: 70px;
+        margin-left: 25px;
+        font-size: 40px;
+      }
+
+      h2 {
+        color: black;
+        margin-left: 25px;
+        font-size: 35px;
+        text-align: center;
+      }
+
+      .details {
+        display: flex;
+        justify-content: center;
+      }
+
+      table {
+        width: 70%;
+        margin: 25px;
+      }
+
+      tbody {
+        width: 100%;
+      }
+
+      tr {
+        width: 100%;
+        height: fit-content;
+      }
+
+      td {
+        padding: 10px;
+        font-size: 25px;
+        border-radius: 5px;
+      }
+
+      .stripe1,
+      .keys,
+      .info {
+        background-color: rgba(0, 19, 72, 0.292)
+      }
+
+      .stripe2,
+      .keys,
+      .info {
+        background-color: rgba(62, 1, 1, 0.201);
+      }
+
+      .keys {
+        width: 25%;
+      }
+
+      .home {
+        width: 150px;
+        height: 50px;
+        font-size: 30px;
+        color: black;
+        background-color: transparent;
+        border: 1px solid #8d8c8c;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s;
+        align-self: center;
+      }
+
+      .home:hover {
+        background-color: #0000003c;
+        border-color: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="profile-pic">
+        <img class="pp" src="./pics/hans1.jpg" alt="" />
+      </div>
+      <h2>Personal Details</h2>
+      <div class="details">
+        <table>
+          <tbody>
+            <tr class="stripe1">
+              <td class="keys">Name</td>
+              <td class="info">Hanz Rondave E. Plaga</td>
+            </tr>
+            <tr class="stripe2">
+              <td class="keys">School</td>
+              <td class="info">Central Philippine University</td>
+            </tr>
+            <tr class="stripe1">
+              <td class="keys">Year Level and Section</td>
+              <td class="info">Grade 10-SUN</td>
+            </tr>
+            <tr class="stripe2">
+              <td class="keys">Date of Birth</td>
+              <td class="info">December 22 2007</td>
+            </tr>
+            <tr class="stripe1">
+              <td class="keys">Gender</td>
+              <td class="info">Male</td>
+            </tr>
+            <tr class="stripe2">
+              <td class="keys">Nationality</td>
+              <td class="info">Filipino</td>
+            </tr>
+            <tr class="stripe1">
+              <td class="keys">Marital Status</td>
+              <td class="info">Single</td>
+            </tr>
+            <tr class="stripe2">
+              <td class="keys">About Me</td>
+              <td class="info">Hello, I'm Hans Rondave E. Plaga, and I find joy in a few simple pleasures. Basketball is not just a game for me but a passion that keeps me active and energized. In moments of relaxation, you'll often find me immersed in the world of music, enjoying various genres and tunes. And when the mood strikes, I love to express myself through singing, letting the melodies be my voice. Join me on this journey where basketball, music, and singing come together to shape the rhythm of my life.</td>
+            </tr>
+            <tr class="stripe1">
+              <td class="keys">Address</td>
+              <td class="info">
+                Urban Poor Village, Tabuc Suba Jaro, Iloilo City
+              </td>
+            </tr>
+            <tr class="stripe2">
+              <td class="keys">Email Address</td>
+              <td class="info">hansrondave@gmail.com</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  </div>
+  <a href="./index.html"><button class="home">Home</button></a>
+  </body>
+</html>
